@@ -1,0 +1,29 @@
+{/* 
+      {/* <LandingPage
+      //  loggedIn={loggedIn} 
+      //  setLoggedIn={setLoggedIn}
+      state={state} 
+      setState={setState} 
+      volume={volume} 
+      setVolume={setVolume} 
+      quality={quality} 
+      setQuality={setQuality}
+      handleClick={handleClick}
+       /> */}
+      {/* <div class="inner">
+        <MainPage state={state} setState={setState} volume={volume} setVolume={setVolume} quality={quality} setQuality={setQuality} />
+      </div> */}
+      {/* {!state && <p>Is currently off line</p>} */}
+      {
+        //   if (loggedIn){ 
+        // return(
+        //   //console.log("this is the first half of the if statement")
+        //   //<h1>ANYTHING<h1>
+        //   <MainPage state={state} setState={setState} volume={volume} setVolume={setVolume} quality={quality} setQuality={setQuality} />
+        // )
+        // } else {
+        //   return(
+        //   //console.log("this is the second half of the if statement")
+        //   //<h1>JUST DISPLAY ANYTHING<h1>
+          // if(loggedIn === false){<LandingPage/>}
+          // )

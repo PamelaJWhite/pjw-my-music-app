@@ -17,8 +17,12 @@ function valuetext(value) {
   
 
 export default function VolumeCard({volume, setVolume, title, body, component: Component}) {
-    const handleChange = () => {
-        setVolume(!volume)
+    const handleChange = (event) => {
+      event.preventDefault()
+      console.log("inside VolumeCard handleChange()")
+      console.log("event.value: ", event.target.value)
+      setVolume(event.target.value)
+      console.log("handleChange() in VolumeCard set the volume to: ", volume)
     }
   return (
     <Card sx={{ maxWidth: 275 }}>
@@ -34,13 +38,15 @@ export default function VolumeCard({volume, setVolume, title, body, component: C
         <Box sx={{ width: 300 }}>
             <Slider
                 aria-label="Temperature"
-                defaultValue={30}
+                defaultValue={20}
+                // value={volume}
                 getAriaValueText={valuetext}
                 valueLabelDisplay="auto"
                 step={10}
-                marks
-                min={10}
-                max={110}
+                marks={true}
+                min={0}
+                max={100}
+                onChange={handleChange} 
             />
         </Box>
       </CardActions>

@@ -16,12 +16,14 @@ const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 export default function SoundQualityCard({quality, setQuality, title, body, component: Component}) {
     const handleChange = (event) => {
+        event.preventDefault()
+        console.log("SoundQualityCard handleChange() event.target.value: ", event.target.value)
         setQuality(event.target.value);
       };
 
   return (
     <Card sx={{ maxWidth: 275 }}>
-      <CardContent>
+      <CardContent >
 
         <Typography variant="h5" component="div">
           {title}
@@ -31,15 +33,15 @@ export default function SoundQualityCard({quality, setQuality, title, body, comp
           {body}
         </Typography>
       </CardContent>
-      <CardActions>
-        <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
-            <InputLabel id="demo-simple-select-standard-label">Quality</InputLabel>
+      <CardActions className="soundQualityCardActions" >
+        <FormControl  className="soundQualityFormControl" variant="standard" sx={{ m: 1, minWidth: 120 }}>
+            {/* <InputLabel id="demo-simple-select-standard-label">Quality</InputLabel> */}
             <Select
             labelId="demo-simple-select-standard-label"
             id="demo-simple-select-standard"
             value={quality}
             onChange={handleChange}
-            label="Quality"
+            label="quality"
             >
             <MenuItem value="">
                 <em>None</em>

@@ -1,33 +1,79 @@
-.outer{
-    background-color: gold;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center;  */
-    align-items:stretch;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.App{
+    font-family: Roboto;
+    background-color: green;
 }
 
+body{
+    font-family: Roboto;
+    color: grey;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    /* color: purple; */
+}
+
+.landingMain{
+    /* background-color:powderblue; */
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.loginInputContainer{
+    /* border: 1px solid mediumslateblue; */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+
 .inner{
-    border: solid 1px blue;
+    /* border: solid 1px rgb(255, 0, 212); */
     display: flex;
     justify-content: center;
 }
 
 .main {
-    border: solid 1px green;
+    /* border: solid 1px green; */
     width: 75%;
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 
 .cardBox {
-    border: solid 1px purple;
+    /* border: solid 1px purple; */
     display: flex;
     justify-content: space-between;
 }
 
 .cards {
-    width: 230px;
+    width: 235px;
     display: flex;
-    /* justify-content: space-between; */
+}
+
+
+.soundQualityCardActions{
+    /* border: 1px solid green;
+    background-color: rgb(255, 209, 192); */
+    display: flex;
+    justify-content: center;
+}
+
+.soundQualityFormControl{
+    /* border: 1px solid rgb(128, 19, 0);
+    background-color: rgb(195, 255, 192); */
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
 }
