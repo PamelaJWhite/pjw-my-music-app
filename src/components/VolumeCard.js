@@ -1,21 +1,16 @@
-import {useState} from 'react';
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import Switch from '@mui/material/Switch';
 import Box from '@mui/material/Box';
 import Slider from '@mui/material/Slider';
-
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
 function valuetext(value) {
     return `${value}°C`;
   }
-  
-
 export default function VolumeCard({volume, setVolume, title, body, component: Component}) {
     const handleChange = (event) => {
       event.preventDefault()
@@ -39,7 +34,6 @@ export default function VolumeCard({volume, setVolume, title, body, component: C
             <Slider
                 aria-label="Temperature"
                 defaultValue={20}
-                // value={volume}
                 getAriaValueText={valuetext}
                 valueLabelDisplay="auto"
                 step={10}

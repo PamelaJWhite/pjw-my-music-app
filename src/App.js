@@ -1,12 +1,8 @@
-// import Buttons from './components/Button'
-// import Button from '@mui/material/Button';
+
 import {useState, useEffect} from 'react';
 import TopBar from './components/TopBar'
 import LandingPage from './components/LandingPage'
 import MainPage from './components/MainPage'
-import OnlineCard from './components/OnlineCard'
-import VolumeCard from './components/VolumeCard'
-import SoundQualityCard from './components/SoundQualityCard'
 
 import './App.css';
 

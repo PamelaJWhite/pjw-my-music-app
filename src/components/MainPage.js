@@ -1,11 +1,9 @@
 import * as React from 'react';
-// import TopBar from './components/TopBar'
 import OnlineCard from './OnlineCard'
 import VolumeCard from './VolumeCard'
 import SoundQualityCard from './SoundQualityCard'
 
 import '../App.css';
-
 
 export default function MainPage({state, handleChange, volume, setVolume, quality, setQuality}) {
   

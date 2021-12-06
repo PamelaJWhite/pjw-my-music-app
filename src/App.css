@@ -18,18 +18,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items:stretch;
-    /* color: purple; */
 }
 
 .landingMain{
-    /* background-color:powderblue; */
     display: flex;
     justify-content: center;
     padding-top: 50px;
 }
 
 .loginInputContainer{
-    /* border: 1px solid mediumslateblue; */
     display: flex;
     flex-direction: column;
     width: 300px;
@@ -37,20 +34,17 @@ body{
 
 
 .inner{
-    /* border: solid 1px rgb(255, 0, 212); */
     display: flex;
     justify-content: center;
 }
 
 .main {
-    /* border: solid 1px green; */
     width: 75%;
     display: flex;
     flex-direction: column; 
 }
 
 .cardBox {
-    /* border: solid 1px purple; */
     display: flex;
     justify-content: space-between;
 }
@@ -62,15 +56,11 @@ body{
 
 
 .soundQualityCardActions{
-    /* border: 1px solid green;
-    background-color: rgb(255, 209, 192); */
     display: flex;
     justify-content: center;
 }
 
 .soundQualityFormControl{
-    /* border: 1px solid rgb(128, 19, 0);
-    background-color: rgb(195, 255, 192); */
     width: 100%;
 }
 
